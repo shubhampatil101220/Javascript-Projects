@@ -24,13 +24,13 @@ Header2.innerText = "Element Box";
  ELEMENTBOX.appendChild(Header2);
  ELEMENTBOX.appendChild(label);
  ELEMENTBOX.appendChild(input);
+ 
 
  document.body.querySelector('label').addEventListener('click',function(){
     SelectedElement = document.createElement("label");
-    SelectedElement.innerText="Label";
-    setTimeout(() => {
-      SelectedElement=null
-    }, 5000);
+    SelectedElement.innerText= ELEMENTBOX.querySelector('input').value;;
+   
+   
     console.log(SelectedElement);
  })
 
@@ -39,13 +39,13 @@ Header2.innerText = "Element Box";
    addinput= document.createElement("input");
    SelectedElement = addinput
     console.log(SelectedElement);
-    setTimeout(() => {
-      SelectedElement=null
-    }, 5000);
+   
+ 
  })
  console.log(SelectedElement);
 // ======================================================================
-form.addEventListener('click',(event)=>{
+
+  form.addEventListener('click',(event)=>{
     const xcordi=event.clientX;
     const ycordi=event.clientY;
    
@@ -56,10 +56,24 @@ form.addEventListener('click',(event)=>{
     Element.style.top=(ycordi-10)+"px";
     Element.style.left=(xcordi-20)+"px";
     
+
+    
     form.appendChild(Element);
+    SelectedElement=null
+
     console.log("x=",xcordi,"y=",ycordi,"element",Element);
 })
 
+
+
+
+
+
+ //  ELEMENTBOX.querySelector('label').innerText=  "label";
+
+
+
+ 
 
 
 
