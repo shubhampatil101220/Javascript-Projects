@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+.Form-Builder-head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+}
+#elementBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.addedItem{
+    position: fixed;
+    width: 50px !important;
+}
+.inputbox{
+    width: 50%;
+}
